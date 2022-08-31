@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar",
+    "keyword": "/pages/search/components/keyword",
+    "tab-bar": "/components/common/tab-bar",
+    "course-list": "/pages/search/components/course-list",
+    "article-list": "/pages/search/components/article-list",
+    "question-list": "/pages/search/components/question-list"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "down-bar": "/pages/search/components/down-bar",
+    "question-item": "/components/common/question-item"
+  }
+}

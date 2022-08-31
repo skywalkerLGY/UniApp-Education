@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "mxg-share": "/components/mxg-share/mxg-share"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#345DC2",
+  "usingComponents": {
+    "search-input": "/components/common/search-input",
+    "mxg-banner": "/components/common/mxg-banner",
+    "category-box": "/pages/index/components/category-box",
+    "swiper-course": "/pages/index/components/swiper-course",
+    "scroll-course": "/pages/index/components/scroll-course",
+    "list-course": "/pages/index/components/list-course"
+  }
+}

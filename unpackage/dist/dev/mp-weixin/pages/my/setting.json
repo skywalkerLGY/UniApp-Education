@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "设置",
+  "usingComponents": {
+    "mxg-list": "/components/mxg-list/mxg-list"
+  }
+}

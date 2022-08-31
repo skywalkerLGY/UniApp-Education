@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mxg-share": "/components/mxg-share/mxg-share",
+    "mxg-comment": "/components/mxg-comment/mxg-comment",
+    "course-dir": "/pages/course/components/course-dir"
+  }
+}

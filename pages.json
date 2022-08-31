@@ -1,0 +1,409 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#345DC2", // 导航栏背景色
+				// "enablePullDownRefresh": true, //开启下拉刷新
+				// "backgroundTextStyle": "dark", // 下拉加载效果
+				"app-plus": {
+					// "pullToRefresh": {
+					// 	"support": true,
+					// 	"style": "circle",
+					// 	"offset": "50px",
+					// 	"color": "#ff007f"
+					// },
+					"bounce": "none", //  关闭回弹
+					"titleNView": { // 自定义导航配置
+						"type": "transparent", // 滚动透明渐变
+						"searchInput": { // 原生导航搜索框
+							"align":"center" ,// 居中
+							"backgroundColor":"#F0F1F2",
+							"borderRadius": "30rpx",
+							"placeholder": "搜索你想要的内容",
+							"placeholderColor":"#979C9D", // 提示文本颜色
+							"disabled": true // 禁止输入，点击跳转到搜索页
+						}
+						// #ifdef APP-PLUS
+						,"buttons": [ // 按钮，注意是数组，中括号[]
+							{
+								"fontSrc": "/static/icon/iconfont.ttf", // 指定图标文件
+								"text": "\ue689", // /u 开头，后面 e开始
+								"fontSize":"23" ,// 按钮大小
+								"background": "rgba(0,0,0,0)" // 按钮全透明背景
+							}
+						]
+						// #endif
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationBarBackgroundColor":"#345DC2",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+					"bounce":"none",
+					"titleNView": {
+						"buttons": [ // 这是数组【】
+							{
+								"color":"#ffffff",
+								"fontSize":"18",
+								"fontSrc": "/static/icon/iconfont.ttf", // 指定图标文件
+								"text": "\ue608", // /u 开头，后面 e开始
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
+		},
+	    {
+            "path" : "pages/article/article",
+            "style" : {
+                "navigationBarTitleText": "阅读",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#345DC2",
+				"app-plus": {
+					"titleNView": { // 自定义导航配置
+						"searchInput": { // 原生导航搜索框
+							"align":"center" ,// 居中
+							"backgroundColor":"#F0F1F2",
+							"borderRadius": "30rpx",
+							"placeholder": "搜索你想要的内容",
+							"placeholderColor":"#979C9D", // 提示文本颜色
+							"disabled": true // 禁止输入，点击跳转到搜索页
+						}
+					}
+				}
+            }
+        },
+        {
+            "path" : "pages/question/question",
+            "style" : {
+                "navigationBarTitleText": "问答",
+            	"navigationBarTextStyle":"white",
+            	"navigationBarBackgroundColor":"#345DC2",
+            	"app-plus": {
+            		"titleNView": { // 自定义导航配置
+            			"searchInput": { // 原生导航搜索框
+            				"align":"center" ,// 居中
+            				"backgroundColor":"#F0F1F2",
+            				"borderRadius": "30rpx",
+            				"placeholder": "搜索你想要的内容",
+            				"placeholderColor":"#979C9D", // 提示文本颜色
+            				"disabled": true // 禁止输入，点击跳转到搜索页
+            			}
+            		}
+            	}
+            }
+        },
+        {
+            "path" : "pages/my/my",
+            "style" : {
+                "navigationBarTitleText": "我的",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#345DC2",
+				"backgroundColorTop":"#345DC2",
+				"backgroundColorBottom":"#FFFFFF",
+				"app-plus": {
+					"scrollIndicator":"none", //隐藏滚动条
+					"titleNView": {
+						"type":"transparent" // 滚动透明渐变
+					}
+				}
+            }
+        },
+		{
+			"path":"pages/public/web-view", // web浏览器组件
+			"style": {
+				"navigationBarTitleText":"",
+				"app-plus": {
+					"bounce":"none" // 禁止页面回弹效果
+				}
+			}
+		}
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"app-plus": {
+					"bounce":"none",
+					"titleNView": {
+						"autoBackButton": false, //隐藏左侧后退按钮（APP）
+						"searchInput": {
+							"align":"left",
+							"placeholder":"搜索你想要的内容",
+							"borderRadius":"30rpx",
+							"backgroundColor":"#f0f1f2"
+						},
+						"buttons": [
+							{
+								"float":"right",
+								"text": "取消",
+								"fontSize":"16",
+								"color":"#2A333B"
+							}
+						]
+					}
+				}
+            }
+            
+        },
+		{ // 课程详情页
+			"path": "pages/course/course-details",
+			"style": {
+				"navigationBarBackgroundColor":"#345DC2",
+				"navigationBarTextStyle":"white",
+				"onReachBottomDistance": 0, //页面滚动条底部距离0时，触发onReachBottom
+				"app-plus": {
+					"bounce":"none",
+					"scrollIndicator":"none", // 隐藏页面滚动条（APP)
+					"titleNView": {
+						"type": "transparent" //透明渐变
+						// #ifdef APP-PLUS
+						,"buttons": [ // 逗号放到前面
+							{
+								"type":"share" // uniapp提供好的内置分享按钮
+							}
+						]
+						// #endif
+					}
+				}
+			}
+		}
+        ,{
+            "path" : "pages/course/course-play",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+					"titleNView": false,
+					"subNVues": [
+						{
+							"id": "top", // 唯一标识
+							"path": "pages/course/subNVue/video", // nvue文件路径 
+							"style": {
+								"position":"dock",
+								"dock":"top",
+								"width":"100%",
+								"height":"245px"
+							}
+						}
+					]
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/confirm-buy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "确认购买",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/my-balance",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的余额",
+                "navigationBarBackgroundColor":"#345DC2",
+				"navigationBarTextStyle":"white",
+				"backgroundColor":"#345DC2",
+				"backgroundColorBottom":"#FFFFFF",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order-pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单支付",
+				"app-plus": {
+					"bounce":"none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/article/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "backgroundColor":"#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						// #ifdef APP-PLUS
+						"buttons": [
+							{
+								"type": "share" // 分享按钮
+							}
+						]
+						// #endif
+					}
+				}
+            }
+            
+        }
+        ,{
+			"path" : "pages/question/details",
+			"style" : {
+				"navigationBarTitleText": "",
+				"backgroundColor":"#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						// #ifdef APP-PLUS
+						"buttons": [
+							{
+								"type": "share" // 分享按钮
+							}
+						]
+						// #endif
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/my/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "意见反馈"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于梦学谷"
+            }
+            
+        }
+        ,{
+            "path" : "pages/auth/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "navigationStyle":"custom", //隐藏导航栏
+				"app-plus": {
+					"bounce":"none",
+					"animationType":"slide-in-bottom" // 从下往上进入页面
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/public/xieyi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户服务协议"
+            }
+            
+        }
+        ,{
+            "path" : "pages/public/yinsi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐私权政策"
+            }
+        }
+        ,{
+            "path" : "pages/auth/bind-mobile",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绑定手机"
+            }
+        }
+        ,{
+            "path" : "pages/my/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人资料"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/study",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的学习",
+                "backgroundColor": "#FFFFFF"
+            }
+            
+        }
+    ],
+	
+	// 标签栏
+	"tabBar": {
+		"color": "#b0abb3", //未选中字体颜色
+		"selectedColor": "#345DC2", //选中字体颜色
+		"backgroundColor":"#f8f8f8", // 背景色
+		"borderStyle":"white", // tabbar 上边框的颜色，可选值 black/white
+		"fontSize":"11px", // 字体大小
+		"height":"52px", // 标签栏高度
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text":"首页",
+				"iconPath":"static/tab/index.png" ,// 未选中图片
+				"selectedIconPath":"static/tab/index-active.png"// 选中图片
+			},
+			{
+				"pagePath": "pages/category/category",
+				"text":"分类",
+				"iconPath":"static/tab/category.png" ,// 未选中图片
+				"selectedIconPath":"static/tab/category-active.png"// 选中图片
+			},
+			{
+				"pagePath": "pages/article/article",
+				"text":"阅读",
+				"iconPath":"static/tab/article.png" ,// 未选中图片
+				"selectedIconPath":"static/tab/article-active.png"// 选中图片
+			},
+			{
+				"pagePath": "pages/question/question",
+				"text":"问答",
+				"iconPath":"static/tab/question.png" ,// 未选中图片
+				"selectedIconPath":"static/tab/question-active.png"// 选中图片
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text":"我的",
+				"iconPath":"static/tab/my.png" ,// 未选中图片
+				"selectedIconPath":"static/tab/my-active.png"// 选中图片
+			}
+		]
+	},
+	"globalStyle": {
+		// 状态栏与导航栏背景色
+		"navigationBarBackgroundColor":"#FFFFFF",
+		// 状态栏与导航栏字体颜色，black/white
+		"navigationBarTextStyle": "black",
+		// 上拉、下拉回弹背景色（ios真机微信小程序有效）
+		"backgroundColor":"#F8F9FB"
+	}
+}

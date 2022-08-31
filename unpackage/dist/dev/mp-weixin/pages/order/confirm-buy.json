@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "确认购买",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "course-item": "/components/common/course-item"
+  }
+}

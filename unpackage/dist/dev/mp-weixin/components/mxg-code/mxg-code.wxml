@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['sendSmsCode',['$event']]]]]}}" class="mxg-code center" bindtap="__e"><text class="code-btn">{{''+(codeDuration>0?codeDuration+'s':'获取验证码')+''}}</text></view>

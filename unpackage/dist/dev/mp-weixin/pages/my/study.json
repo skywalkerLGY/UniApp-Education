@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的学习",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "no-data": "/components/no-data/no-data"
+  }
+}

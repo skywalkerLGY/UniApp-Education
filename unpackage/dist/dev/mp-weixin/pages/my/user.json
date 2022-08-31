@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人资料",
+  "usingComponents": {
+    "mxg-list": "/components/mxg-list/mxg-list"
+  }
+}

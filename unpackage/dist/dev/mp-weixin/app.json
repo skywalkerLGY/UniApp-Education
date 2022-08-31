@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/article/article",
+    "pages/question/question",
+    "pages/my/my",
+    "pages/public/web-view",
+    "pages/search/search",
+    "pages/course/course-details",
+    "pages/course/course-play",
+    "pages/order/confirm-buy",
+    "pages/order/my-balance",
+    "pages/order/order",
+    "pages/order/order-pay",
+    "pages/article/details",
+    "pages/question/details",
+    "pages/my/setting",
+    "pages/my/feedback",
+    "pages/my/about",
+    "pages/auth/login",
+    "pages/public/xieyi",
+    "pages/public/yinsi",
+    "pages/auth/bind-mobile",
+    "pages/my/user",
+    "pages/my/study"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F8F9FB"
+  },
+  "tabBar": {
+    "color": "#b0abb3",
+    "selectedColor": "#345DC2",
+    "backgroundColor": "#f8f8f8",
+    "borderStyle": "white",
+    "fontSize": "11px",
+    "height": "52px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/index.png",
+        "selectedIconPath": "static/tab/index-active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "static/tab/category.png",
+        "selectedIconPath": "static/tab/category-active.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "阅读",
+        "iconPath": "static/tab/article.png",
+        "selectedIconPath": "static/tab/article-active.png"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "问答",
+        "iconPath": "static/tab/question.png",
+        "selectedIconPath": "static/tab/question-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tab/my.png",
+        "selectedIconPath": "static/tab/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "mescroll-body": "/components/mescroll-uni/mescroll-body"
+  },
+  "sitemapLocation": "sitemap48.json"
+}
